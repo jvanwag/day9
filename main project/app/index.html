@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listo</title>
+    <link rel="stylesheet" type="text/css" href="app/styles/main.css">
+    </head>
+<body>
+<!-- This will allow the user to write a todo task into the html and save it to array. This creates a form with a save and cancel buttons.-->
+    <form id="newTaskForm">
+        <label>New Item</label>
+        <input id="newItemInput" placeholder="new task"></input>
+        <button id="saveNewItem">Save</button>
+        <button id="cancel">Cancel</button>
+    </form>
+<!-- ********************************************* -->
+<!--The newListItem button will be created and attached to the js file so that we can toggle the form.-->
+    <div class='new-item-header'>
+        <button href='#' class="pull-right pencil" id="newListItem" style="">New</button>
+    </div>
+    <div id="newList">
+        New List
+    </div>
+    <!-- This will create some hooks for our jQuery to find and manipulate-->
+    <div class="panel">
+        In Progress
+        <ul class="list-group" id="currentList"></ul>
+    </div>
+    <div class="panel">
+        Archived
+        <ul class="list-group" id="archivedList"></ul>
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="app/scripts/app.js"></script>
+</body>
+</html>
